@@ -1,1 +1,2 @@
-To flash the firmware use the following command: `qmk flash -kb lily58/rev1 mandrab-default.json`
+Compile the code with `qmk compile -kb lily58/rev1 -km mandrab`<br>
+Flash the firmware with `qmk flash -kb lily58/rev1 -km mandrab`
