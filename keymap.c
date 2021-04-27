@@ -58,20 +58,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   * |------+------+------+------+------+------|                              |------+------+------+------+------+------|
   * |      | PGUP |   UP |PGDOWN| +BRI | +VOL |                              |   *  |   7  |   8  |   9  |   -  |      |
   * |------+------+------+------+------+------|                              |------+------+------+------+------+------|
-  * |      | LEFT | DOWN |RIGHT | -BRI | -VOL |-------.              ,-------|   /  |   4  |   5  |   6  |   +  |      |
+  * |LShift| LEFT | DOWN |RIGHT | -BRI | -VOL |-------.              ,-------|   /  |   4  |   5  |   6  |   +  |      |
   * |------+------+------+------+------+------|       |              |       |------+------+------+------+------+------|
-  * |      |MOUSEL|MOUSEU|MOUSED|MOUSER| MUTE |-------|              |-------|   .  |   1  |   2  |   3  |   =  |      |
+  * |LCTRL |MOUSEL|MOUSEU|MOUSED|MOUSER| MUTE |-------|              |-------|   .  |   1  |   2  |   3  |   =  |      |
   * `-----------------------------------------/       /              \       \-----------------------------------------'
-  *                   |      |      |Enter | /MOUSE 1/                \MOUSE 2\  |QWERTY|  MOD |   0  |
+  *                   |      |  Alt |Enter | /MOUSE 1/                \MOUSE 2\  |QWERTY|  MOD |   0  |
   *                   |      |      |      |/       /                  \       \ |      |      |      |
   *                   `----------------------------'                    '-------''--------------------'
   */
   [RAISE] = LAYOUT( \
     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                        XXXXXXX,   XXXXXXX, KC_PCMM, XXXXXXX, XXXXXXX, XXXXXXX,  \
     XXXXXXX, KC_PGUP, KC_UP,   KC_PGDN, KC_BRIU, KC_VOLU,                        KC_PAST,   KC_P7,   KC_P8,   KC_P9,   KC_PMNS, XXXXXXX,  \
-    XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, KC_BRID, KC_VOLD,                        KC_PSLS,   KC_P4,   KC_P5,   KC_P6,   KC_PPLS, XXXXXXX,  \
-    XXXXXXX, KC_MS_L, KC_MS_U, KC_MS_D, KC_MS_R, KC_MUTE, XXXXXXX,     XXXXXXX,  KC_PDOT,   KC_P1,   KC_P2,   KC_P3,   KC_PEQL, XXXXXXX,  \
-                               XXXXXXX, XXXXXXX, KC_PENT, KC_BTN1,     KC_BTN2,  TO(QWERTY),KC_LGUI, KC_P0                                \
+    _______, KC_LEFT, KC_DOWN, KC_RGHT, KC_BRID, KC_VOLD,                        KC_PSLS,   KC_P4,   KC_P5,   KC_P6,   KC_PPLS, XXXXXXX,  \
+    _______, KC_MS_L, KC_MS_U, KC_MS_D, KC_MS_R, KC_MUTE, XXXXXXX,     XXXXXXX,  KC_PDOT,   KC_P1,   KC_P2,   KC_P3,   KC_PEQL, XXXXXXX,  \
+                               KC_LALT, XXXXXXX, KC_PENT, KC_BTN1,     KC_BTN2,  TO(QWERTY),KC_LGUI, KC_P0                                \
   )
 };
 
